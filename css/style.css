@@ -175,8 +175,11 @@ nav a{
 /* MAIN */
 main {
     color: #000000;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
     padding: 13em 0;
+
+    /* DEBUG */
+    background-color: gray;
 }
 
 .paragraph {
@@ -190,10 +193,13 @@ main {
     background-color: #ffffff;
 }
 
-.paragraph:nth-child(2) {
-    background-color: #f6f6f6;
+.paragraph:nth-child(2n) {
+    /* background-color: #f6f6f6; */
     
     flex-direction: row-reverse;
+
+    /* DEBUG */
+    background-color: gray;
 }
 
 /* Small paragraphs */
@@ -242,7 +248,10 @@ main {
 /* Bottom CTA */
 .bottom-cta {
     text-align: center;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
+
+    /* DEBUG */
+    background-color: gray;
 }
 
 .bottom-cta-button a {
