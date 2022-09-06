@@ -55,6 +55,14 @@ hr {
     background-color: #23272b;
 }
 
+.cta{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+}
+
 /* HEADER */
 header {
     height: 70px;
@@ -107,7 +115,6 @@ nav ul {
 
     display: flex;
     justify-content: space-around;
-    /* column-gap: 1em; */
 }
 
 nav a{
@@ -154,66 +161,98 @@ nav a{
     line-height: 1.5em;
 }
 
-.jumbotron-content .cta{
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 3em;
-}
+/* .jumbotron-content */
 .jumbotron-content a {
     font-size: 2rem;
 }
 
 /* MAIN */
+main {
+    color: #000000;
+    background-color: #f6f6f6;
+    padding: 10em 0;
+}
+
 .paragraph {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
-    padding: 2em;
-    /* min-height: 400px; */
-}
+    padding: 10em 0;
 
-.paragraph.white {
     background-color: #ffffff;
 }
 
-.paragraph.gray {
-    background-color: #d3d3d3;
+.paragraph:nth-child(2) {
+    background-color: #f6f6f6;
+    
+    flex-direction: row-reverse;
 }
 
+/* Small paragraphs */
 .p-content {
     display: flex;
-    
-    height: 350px;
+
     width: 100%;
 }
 
 .p-content .image {
     width: 60%;
-    background-color: #1e90ff;
+}
+
+.p-content .image img {
+    width: 100%;
 }
 
 .p-content .text {
     width: 40%;
-    background-color: #ffc0cb;
 }
 
+.p-content .text h2 {
+    line-height: 1.3em;
+    margin-bottom: 0.8em;
+}
+
+.p-content .text p {
+    line-height: 1.4em;
+}
+
+/* Big paragraph */
 .p-big-content {
-    display: flex;
-    
-    height: 550px;
     width: 100%;
+
+    text-align: center;
 }
 
 .p-big-content .text {
     width: 100%;
-
-    /* DEBUG */
-    background-color: #228b22;
 }
+
+.p-big-content .image img{
+    width: 100%;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.bottom-cta-content h3{
+    font-size: 3em;
+}
+
+.bottom-cta-button a {
+    font-size: 2rem;
+    margin-top: 4em;
+    margin bottom
+
+    color: #ffffff;
+    background-color: #7289da;
+}
+
+
 
 /* FOOTER */
 footer {
