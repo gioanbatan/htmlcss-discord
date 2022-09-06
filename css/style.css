@@ -9,17 +9,27 @@
 html {
     font-size: 62.5%;
     font-family: Whitney, Helvetica, Arial, sans-serif;
+}
 
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2rem;
 }
 
 hr {
     margin: 2em 0;
     color:#eeeeee;
 }
+
 .container {
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
 }
+
 /* UTILITY */
 .bdashed {
     border: 1px dashed black;
@@ -29,36 +39,61 @@ hr {
     border-color: #ffffff;
 }
 
+.button {
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 0.7em;
+
+    /* Default */
+    font-weight: 600;
+    color: #000000;
+    background-color: #fdfdfe;
+}
+
+.dark {
+    color: #fdfdfd;
+    background-color: #23272b;
+}
+
 /* HEADER */
 header {
-    height: 60px;
+    height: 70px;
+
+    background-color: #255ee9;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* DEBUG */
-    background-color: #add8e6;
 }
 
 .header-bar {
-    height: 80%;
-    
+    height: 100%;
+
     display: flex;
+    align-items: center;
 
     /* DEBUG */
-    background-color: #daa520;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .logo {
+    height: 100%;
     width: 25%;
 
     display: flex;
     align-items: center;
 }
 
+.logo a {
+    height: 30px;
+}
+
+.logo img {
+    height: 100%;
+}
+
 nav {
+    height: 100%;
     width: 50%;
 
     display: flex;
@@ -67,13 +102,21 @@ nav {
 }
 
 nav ul {
+    width: 100%;
     list-style: none;
 
     display: flex;
-    column-gap: 1em;
+    justify-content: space-around;
+    /* column-gap: 1em; */
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .login {
+    height: 100%;
     width: 25%;
 
     display: flex;
@@ -81,22 +124,45 @@ nav ul {
     align-items: center;
 }
 
+/* Jumbotron */
 .jumbotron {
+    color: #ffffff;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* DEBUG */
-    height: 400px;
-    background-color:#00008b;
+    min-height: 500px;
 }
 
 .jumbotron-content {
     height: 80%;
     width: 55%;
+    max-width: 942px;
 
-    /* DEBUG */
-    background-color: #ee82ee;
+    text-align: center;
+}
+
+.jumbotron-content h2 {
+    margin-bottom: 0.8em;
+}
+
+.jumbotron-content p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.jumbotron-content .cta{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3em;
+}
+.jumbotron-content a {
+    font-size: 2rem;
 }
 
 /* MAIN */
