@@ -176,10 +176,10 @@ nav a{
 main {
     color: #000000;
     /* background-color: #f6f6f6; */
-    padding: 13em 0;
+    padding-top: 13em;
 
     /* DEBUG */
-    background-color: gray;
+    background-color: white;
 }
 
 .paragraph {
@@ -188,18 +188,50 @@ main {
     align-items: center;
 
     width: 100%;
-    padding: 10em 0;
+    padding-top: 10em;
 
     background-color: #ffffff;
 }
 
-.paragraph:nth-child(2n) {
+.paragraph:nth-of-type(2n) {
     /* background-color: #f6f6f6; */
     
     flex-direction: row-reverse;
 
     /* DEBUG */
     background-color: gray;
+}
+
+.paragraph::after {
+    /* content: url(../img/wave.svg); */
+    
+}
+
+.test {
+    height: 15em;
+    width: 100%;
+
+    background-color: #ffffff;
+    background-image: url("../img/wave.svg");
+
+    color: #7087d9;
+    background-size: cover;
+    /* opacity: 4%; */
+}
+.wawe {
+    display: block;
+    height: 15em;
+    width: 100%;
+
+    /* border: 0; */
+    /* margin: 0; */
+
+    color: #f6f6f6;
+    background-color: #ffffff;
+
+    /* background-color:#255ee9; */
+    background-image: url("../img/wave.svg");
+    background-size: cover;   
 }
 
 /* Small paragraphs */
@@ -241,17 +273,32 @@ main {
     width: 100%;
 }
 
-.p-big-content .image img{
+.p-big-content .image img {
     width: 100%;
 }
 
 /* Bottom CTA */
 .bottom-cta {
     text-align: center;
+    padding-bottom: 10em;
     /* background-color: #f6f6f6; */
 
     /* DEBUG */
     background-color: gray;
+}
+
+.bottom-cta-content {
+    padding-top: 5em;
+}
+
+.bottom-cta-content h3 {
+    display: inline-block;
+    padding: 2em;
+
+    background-image: url("../img/stars.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-color: brown; */
 }
 
 .bottom-cta-button a {
