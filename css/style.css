@@ -15,13 +15,21 @@ h2 {
     font-size: 5rem;
 }
 
+h3 {
+    font-size: 3em;
+}
+
 p {
     font-size: 2rem;
 }
 
+ul{
+    list-style: none;
+}
+
 hr {
     margin: 2em 0;
-    color:#eeeeee;
+    color: #4f5d8c;
 }
 
 .container {
@@ -80,7 +88,6 @@ header {
     display: flex;
     align-items: center;
 
-    /* DEBUG */
     font-size: 1.8rem;
 }
 
@@ -111,7 +118,6 @@ nav {
 
 nav ul {
     width: 100%;
-    list-style: none;
 
     display: flex;
     justify-content: space-around;
@@ -170,7 +176,7 @@ nav a{
 main {
     color: #000000;
     background-color: #f6f6f6;
-    padding: 10em 0;
+    padding: 13em 0;
 }
 
 .paragraph {
@@ -239,14 +245,9 @@ main {
     background-color: #f6f6f6;
 }
 
-.bottom-cta-content h3{
-    font-size: 3em;
-}
-
 .bottom-cta-button a {
     font-size: 2rem;
     margin-top: 4em;
-    margin bottom
 
     color: #ffffff;
     background-color: #7289da;
@@ -256,9 +257,7 @@ main {
 
 /* FOOTER */
 footer {
-    padding: 2em 0;
-
-    /* DEBUG */
+    padding: 8em 0;
     background-color: #23272a;
 }
 
@@ -267,19 +266,54 @@ footer {
 
     /* DEBUG */
     height: 450px;
-    background-color: #20b2aa;
+    /* background-color: #23272a; */
 }
 
 .social {
-    width: 30%;
-    /* DEBUG */
-    background-color: #f08080;
+    width: 25%;
+
+    color: #7289da;
+}
+
+.social .language{
+    margin: 2.5em 0;
+    height: 30px;
+}
+
+.social img {
+    height: 1.6em;
+}
+
+.social select {
+    font-size: 1.6rem;
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.social .social-icons {
+    font-size: 2rem;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 1.3em;
 }
 
 .links {
-    width: calc(70% / 4);
-    /* DEBUG */
-    background-color: #20b2aa;
+    width: calc(75% / 4);
+
+    font-size: 2rem;
+}
+
+.links ul li {
+    margin: 0.7em 0;
+    color: #ffffff;
+}
+
+.links ul li:first-child {
+    color: #7289da;
 }
 
 .footer-bottom {
@@ -287,11 +321,15 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    height: 40px;    /* DEBUG */
-    background-color: #7fffd4;
+    height: 40px;
 }
 
 .elements-bottom {
     padding: 5px;
-    background-color: #ffb6c1;
+}
+
+.elements-bottom .button {
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #7087d9;
 }
