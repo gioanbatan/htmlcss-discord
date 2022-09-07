@@ -194,44 +194,30 @@ main {
 }
 
 .paragraph:nth-of-type(2n) {
-    /* background-color: #f6f6f6; */
+    background-color: #f6f6f6;
     
     flex-direction: row-reverse;
 
     /* DEBUG */
-    background-color: gray;
+    /* background-color: gray; */
 }
 
-.paragraph::after {
-    /* content: url(../img/wave.svg); */
+.wave {
+    height: 15em;
+    width: 100%;
+
+    border: 0;
+    margin: 0;
+
     
-}
+    opacity: 3.5%;     
 
-.test {
-    height: 15em;
-    width: 100%;
-
-    background-color: #ffffff;
-    background-image: url("../img/wave.svg");
-
-    color: #7087d9;
-    background-size: cover;
-    /* opacity: 4%; */
-}
-.wawe {
-    display: block;
-    height: 15em;
-    width: 100%;
-
-    /* border: 0; */
-    /* margin: 0; */
-
-    color: #f6f6f6;
-    background-color: #ffffff;
-
-    /* background-color:#255ee9; */
     background-image: url("../img/wave.svg");
     background-size: cover;   
+}
+
+.wave.reverse {
+    transform: rotate(180deg);
 }
 
 /* Small paragraphs */
@@ -281,10 +267,10 @@ main {
 .bottom-cta {
     text-align: center;
     padding-bottom: 10em;
-    /* background-color: #f6f6f6; */
+    background-color: #f6f6f6;
 
     /* DEBUG */
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 .bottom-cta-content {
