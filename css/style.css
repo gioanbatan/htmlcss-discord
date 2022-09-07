@@ -23,7 +23,7 @@ p {
     font-size: 2rem;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -33,7 +33,7 @@ hr {
 }
 
 .container {
-    width: 70%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -88,7 +88,7 @@ header {
     display: flex;
     align-items: center;
 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .logo {
@@ -176,7 +176,7 @@ nav a{
 main {
     color: #000000;
     /* background-color: #f6f6f6; */
-    padding-top: 13em;
+    padding-top: 1em;
 
     /* DEBUG */
     background-color: white;
@@ -225,6 +225,8 @@ main {
     display: flex;
 
     width: 100%;
+
+    padding-bottom: 8em;
 }
 
 .p-content .image {
@@ -232,7 +234,7 @@ main {
 }
 
 .p-content .image img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .p-content .text {
@@ -240,7 +242,8 @@ main {
 }
 
 .p-content .text h2 {
-    line-height: 1.3em;
+    line-height: 1.2em;
+    font-weight: 700;
     margin-bottom: 0.8em;
 }
 
@@ -266,37 +269,30 @@ main {
 /* Bottom CTA */
 .bottom-cta {
     text-align: center;
-    padding-bottom: 10em;
+    padding-bottom: 11em;
     background-color: #f6f6f6;
-
-    /* DEBUG */
-    /* background-color: gray; */
 }
 
 .bottom-cta-content {
-    padding-top: 5em;
+    padding-top: 4em;
 }
 
 .bottom-cta-content h3 {
     display: inline-block;
-    padding: 2em;
+    padding: 1.7em;
 
     background-image: url("../img/stars.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-color: brown; */
 }
 
 .bottom-cta-button a {
     font-size: 2rem;
-    margin-top: 4em;
 
     color: #ffffff;
     background-color: #7289da;
 }
-
-
-
+    
 /* FOOTER */
 footer {
     padding: 8em 0;
@@ -305,10 +301,6 @@ footer {
 
 .footer-links {
     display: flex;
-
-    /* DEBUG */
-    height: 450px;
-    /* background-color: #23272a; */
 }
 
 .social {
