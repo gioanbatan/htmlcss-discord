@@ -50,7 +50,8 @@ hr {
 .button {
     border-radius: 50px;
     text-decoration: none;
-    padding: 0.7em;
+    /* padding-top: 0.7em; */
+    padding: 0.7em 1em 0.6em;
 
     /* Default */
     font-weight: 600;
@@ -61,6 +62,14 @@ hr {
 .dark {
     color: #fdfdfd;
     background-color: #23272b;
+}
+
+.down-arrow:before {
+    content: "\1F817";
+    margin-right: .4em;
+    font-size: 1.2em;
+
+    vertical-align: middle;
 }
 
 .cta{
@@ -197,9 +206,17 @@ main {
     background-color: #f6f6f6;
     
     flex-direction: row-reverse;
+}
 
-    /* DEBUG */
-    /* background-color: gray; */
+.paragraph h2 {
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-bottom: 0.8em;
+}
+
+.paragraph p {
+    line-height: 1.4em;
+    font-weight: 600;
 }
 
 .wave {
@@ -239,16 +256,6 @@ main {
 
 .p-content .text {
     width: 40%;
-}
-
-.p-content .text h2 {
-    line-height: 1.2em;
-    font-weight: 700;
-    margin-bottom: 0.8em;
-}
-
-.p-content .text p {
-    line-height: 1.4em;
 }
 
 /* Big paragraph */
